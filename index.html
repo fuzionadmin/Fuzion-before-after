@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuzion Hair Care - Before & After</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+<div class="container" id="captureArea">
+
+    <div class="logo-section">
+        <h1>FUZION</h1>
+        <h2>HAIR CARE</h2>
+    </div>
+
+    <div class="photo-section">
+
+        <label class="upload-box">
+            <input type="file" accept="image/*" id="beforeInput">
+            <img id="beforePreview">
+            <div class="placeholder" id="beforeText">
+                BEFORE<br><br>
+                Click To Upload
+            </div>
+        </label>
+
+        <label class="upload-box">
+            <input type="file" accept="image/*" id="afterInput">
+            <img id="afterPreview">
+            <div class="placeholder" id="afterText">
+                AFTER<br><br>
+                Click To Upload
+            </div>
+        </label>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="features">
+            <span>NO HARSH CHEMICALS</span>
+            <span>PARABEN FREE</span>
+            <span>100% NATURAL & VEGAN</span>
+        </div>
+
+        <div class="contact">
+            <p>📞 601168676613</p>
+            <p>Facebook @fuzionhaircare</p>
+            <p>Instagram @fuzion_haircare</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="button-area">
+    <button onclick="downloadImage()">
+        Download Before & After
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
