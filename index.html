@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fuzion Hair Care - Before & After</title>
+<title>Fuzion Before & After</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -12,57 +12,28 @@
 </head>
 <body>
 
-<div class="container" id="captureArea">
+<div id="capture" class="canvas">
 
-    <div class="logo-section">
-        <h1>FUZION</h1>
-        <h2>HAIR CARE</h2>
-    </div>
+    <label class="upload before">
+        <input type="file" accept="image/*" capture="environment" id="beforeInput">
+        <img id="beforeImg">
+        <span>CLICK TO UPLOAD</span>
+    </label>
 
-    <div class="photo-section">
-
-        <label class="upload-box">
-            <input type="file" accept="image/*" id="beforeInput">
-            <img id="beforePreview">
-            <div class="placeholder" id="beforeText">
-                BEFORE<br><br>
-                Click To Upload
-            </div>
-        </label>
-
-        <label class="upload-box">
-            <input type="file" accept="image/*" id="afterInput">
-            <img id="afterPreview">
-            <div class="placeholder" id="afterText">
-                AFTER<br><br>
-                Click To Upload
-            </div>
-        </label>
-
-    </div>
-
-    <div class="footer">
-
-        <div class="features">
-            <span>NO HARSH CHEMICALS</span>
-            <span>PARABEN FREE</span>
-            <span>100% NATURAL & VEGAN</span>
-        </div>
-
-        <div class="contact">
-            <p>📞 601168676613</p>
-            <p>Facebook @fuzionhaircare</p>
-            <p>Instagram @fuzion_haircare</p>
-        </div>
-
-    </div>
+    <label class="upload after">
+        <input type="file" accept="image/*" capture="environment" id="afterInput">
+        <img id="afterImg">
+        <span>CLICK TO UPLOAD</span>
+    </label>
 
 </div>
 
-<div class="button-area">
-    <button onclick="downloadImage()">
-        Download Before & After
+<div class="btn-area">
+
+    <button onclick="downloadResult()">
+        Download Image
     </button>
+
 </div>
 
 <script src="script.js"></script>
