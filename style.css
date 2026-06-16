@@ -34,12 +34,16 @@ body{
 
 .upload img{
 
+    position:absolute;
+    top:0;
+    left:0;
+
     width:100%;
     height:100%;
 
     object-fit:cover;
 
-    display:none;
+    background:white;
 }
 
 .upload span{
@@ -59,20 +63,20 @@ body{
 
 .before{
 
-    left:55px;
-    top:337px;
+    left:68px;
+    top:350px;
 
-    width:557px;
-    height:672px;
+    width:530px;
+    height:645px;
 }
 
 .after{
 
-    left:645px;
-    top:337px;
+    left:658px;
+    top:350px;
 
-    width:557px;
-    height:672px;
+    width:530px;
+    height:645px;
 }
 
 .btn-area{
